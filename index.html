@@ -30,7 +30,9 @@
               class="inputForm"
               autocomplete="off"
               data-form-input
+              required
             />
+            <input type="datetime-local" name="fecha" id="date" data-form-date placeholder="YYYY/MM/DD" required>
             <button type="submit" class="btnCreate" data-form-btn>
               Agregar <i class="fas fa-plus-circle"></i>
             </button>
@@ -40,6 +42,8 @@
         </ul>
       </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
     <script type="module" src="script.js"></script> <!-- Debemos indicar que es de tipo modulo si queremos exportar e importar -->
   </body>
 </html>
